@@ -62,3 +62,8 @@ from sklearn.metrics import accuracy_score
 train_predictions = model.predict(X)
 train_accuracy = accuracy_score(y, train_predictions)
 print(f"Training Accuracy: {train_accuracy:.4f}")
+train_predictions = model.predict(X) 
+
+sns.heatmap(confusion_matrix(y, train_predictions), annot=True, fmt='d') 
+plt.title('Confusion Matrix') 
+plt.show()
