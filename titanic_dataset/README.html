@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titanic ML Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* --- RESET --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background: #f4f7f9; color: #333; }
+    a { text-decoration: none; color: #0077b6; }
+    img { max-width: 100%; display: block; }
+
+    /* --- CONTAINER --- */
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
+
+    /* --- HEADER --- */
+    header { text-align: center; padding: 40px 20px 20px; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; color: #023e8a; }
+    header p { font-size: 1.1rem; color: #0077b6; margin-bottom: 20px; }
+    header figure { margin: 20px 0; }
+    header figcaption { font-size: 0.9rem; color: #555; margin-top: 5px; }
+
+    /* --- SECTIONS --- */
+    section { padding: 40px 20px; background: #fff; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    section h2 { font-size: 2rem; margin-bottom: 20px; color: #0077b6; }
+    section h3 { font-size: 1.5rem; margin-bottom: 15px; color: #023e8a; }
+
+    /* --- TABLE --- */
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    table th, table td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+    table th { background: #0077b6; color: #fff; }
+
+    /* --- LISTS --- */
+    ul { list-style-type: disc; padding-left: 20px; margin-bottom: 20px; }
+    ul li { margin-bottom: 10px; }
+
+    /* --- CODE BLOCK --- */
+    pre { background: #f0f0f0; padding: 15px; border-radius: 8px; overflow-x: auto; margin-bottom: 20px; }
+    code { font-family: monospace; }
+
+    /* --- BUTTON LINKS --- */
+    .btn { display: inline-block; padding: 10px 20px; background: #0077b6; color: #fff; border-radius: 5px; transition: 0.3s; }
+    .btn:hover { background: #023e8a; }
+
+    /* --- FOOTER --- */
+    footer { text-align: center; padding: 30px 20px; font-size: 0.9rem; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <h1>🚢 Titanic: Machine Learning from Disaster</h1>
+      <p>🧑‍💻 Predicting passenger survival on the Titanic using Machine Learning</p>
+      <figure>
+        <img src="https://github.com/RiddyMazumder/titanic-machine-learning-from-disaster/blob/main/TITANIC-Explained-Hymn-to-the-Sea-1.webp" alt="Titanic Banner">
+        <figcaption>Titanic Banner</figcaption>
+      </figure>
+    </header>
+
+    <!-- PROJECT OVERVIEW -->
+    <section>
+      <h2>📌 Project Overview & 🏆 Kaggle Competition</h2>
+      <table>
+        <tr>
+          <th>Project Overview</th>
+          <th>Kaggle Competition & Score</th>
+        </tr>
+        <tr>
+          <td>📝 Predict passenger survival using end-to-end ML workflow: EDA, preprocessing, feature engineering, model training, and evaluation. Beginner-friendly!</td>
+          <td>🚀 <strong>Titanic – Machine Learning from Disaster</strong><br>
+            🔗 <a href="https://www.kaggle.com/competitions/titanic" target="_blank">Competition Link</a><br>
+            <strong>Public Score:</strong> <em>Add your score here (e.g., 0.78)</em>
+          </td>
+        </tr>
+      </table>
+      <p>This repository provides a step-by-step ML workflow implemented in a <strong>Jupyter Notebook</strong> for beginners.</p>
+      <ul>
+        <li>📊 Exploratory Data Analysis (EDA)</li>
+        <li>🧹 Data cleaning & preprocessing</li>
+        <li>🛠️ Feature engineering</li>
+        <li>🤖 Model training & evaluation</li>
+        <li>💾 Saving the trained model</li>
+      </ul>
+    </section>
+
+    <!-- LIBRARIES -->
+    <section>
+      <h2>📚 Libraries Used</h2>
+      <ul>
+        <li>🐼 <code>pandas</code></li>
+        <li>🔢 <code>numpy</code></li>
+        <li>🧠 <code>scikit-learn</code></li>
+        <li>📈 <code>matplotlib</code></li>
+        <li>🎨 <code>seaborn</code></li>
+        <li>🌐 <code>plotly</code></li>
+      </ul>
+      <h3>🔧 Installation</h3>
+      <pre><code>pip install pandas numpy scikit-learn matplotlib seaborn plotly</code></pre>
+    </section>
+
+    <!-- GETTING STARTED -->
+    <section>
+      <h2>🚀 Getting Started</h2>
+      <h3>1️⃣ Clone the Repository</h3>
+      <pre><code>git clone https://github.com/RiddyMazumder/titanic-machine-learning-from-disaster.git</code></pre>
+      <h3>2️⃣ Navigate to Project Directory</h3>
+      <pre><code>cd titanic-machine-learning-from-disaster</code></pre>
+      <h3>3️⃣ Launch Jupyter Notebook</h3>
+      <pre><code>jupyter notebook</code></pre>
+      <p>or open in <strong>VS Code</strong>.</p>
+      <h3>4️⃣ Open Notebook</h3>
+      <pre><code>Titanic_Machine_Learning.ipynb</code></pre>
+    </section>
+
+    <!-- PROJECT STRUCTURE -->
+    <section>
+      <h2>📁 Project Structure</h2>
+      <pre><code>├── 📝 Titanic_Machine_Learning.ipynb
+├── 📂 titanic_dataset/
+│   ├── train.csv
+│   └── test.csv
+├── 💾 titanic_model.pkl
+├── 📄 README.md</code></pre>
+      <ul>
+        <li>📂 <strong>titanic_dataset/</strong> – Training & test datasets</li>
+        <li>📝 <strong>Titanic_Machine_Learning.ipynb</strong> – Full notebook</li>
+        <li>💾 <strong>titanic_model.pkl</strong> – Saved model</li>
+      </ul>
+    </section>
+
+    <!-- KEY FEATURES -->
+    <section>
+      <h2>📈 Key Features</h2>
+      <ul>
+        <li>📝 Clean and well-documented notebook</li>
+        <li>📊 Visual data exploration using Matplotlib, Seaborn & Plotly</li>
+        <li>🤖 ML model training and evaluation</li>
+        <li>💾 Reusable saved model (.pkl)</li>
+      </ul>
+    </section>
+
+    <!-- LICENSE -->
+    <section>
+      <h2>📄 License</h2>
+      <p>This project is licensed under the <strong>MIT License</strong>. Free to use, modify, and distribute for educational and personal purposes.</p>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section>
+      <h2>💬 Feedback & Contributions</h2>
+      <ul>
+        <li>🐞 Open an issue</li>
+        <li>📤 Submit a pull request</li>
+      </ul>
+      <p>Contributions are always welcome! 😊</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Happy analyzing and learning! 🚀 | &copy; 2026 Titanic ML Project</p>
+    </footer>
+  </div>
+</body>
+</html>
